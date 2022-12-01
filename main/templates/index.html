@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OmniGether: Home</title>
+    <link href="{%static 'images/logomaker.png" rel="icon" />
     <link rel="stylesheet" href="{%static 'css/reset.css'%}" />
     <link rel="stylesheet" href="{%static 'css/style.css'%}" />
     <link rel="stylesheet" href="{%static 'css/font.css'%}" />
@@ -16,13 +17,13 @@
     />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <ul>
         <li>
-          <a class="active" href="#home"
+          <a href="{% url 'home' %}"
             ><img
               class="header-logo"
-              src="{%static 'images/logologo.png'%}"
+              src="{%static 'images/logomaker.png'%}"
               alt="logo"
           /></a>
         </li>
@@ -31,14 +32,31 @@
         <li><a href="#help">help</a></li>
         <li><a href="#about">About</a></li>
       </ul>
-      <a href="#getStart" class="getstart">get OmniGether</a>
+      <a href="{% url 'main' %}" class="getstart">get OmniGether</a>
+    </header>
+    <header class="responsive-header">
+      <div>
+        <a href="{% url 'home' %}"
+          ><img
+            class="header-logo"
+            src="{%static 'images/logomaker.png'%}"
+            alt="logo"
+        /></a>
+        <a href="{% url 'main' %}" class="getstart">get OmniGether</a>
+      </div>
+      <ul>
+        <li><a href="#app">app</a></li>
+        <li><a href="#extension">browser extension</a></li>
+        <li><a href="#help">help</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
     </header>
     <div>
       <div class="headline">
         <h1>get start shopping with <span>OmniGether.</span></h1>
         <p>Smartest shopping assistant</p>
         <div><img src="{%static 'images/banner2.png'%}" alt="banner" /></div>
-        <a href="#">get start</a>
+        <a href="{% url 'main' %}">get start</a>
       </div>
       <div class="feature-options">
         <div class="feature-option">
@@ -52,7 +70,7 @@
           </div>
         </div>
         <div class="feature-option">
-          <img src="{%static 'images/search.png'%}" alt="search" />
+          <img src="{%static 'images/search.png'%}" alt="Search" />
           <div class="feature-desc">
             <h2>Find Best Deal</h2>
             <p>
@@ -72,7 +90,7 @@
           </div>
         </div>
         <div class="feature-option">
-          <img src="{%static 'images/package.png'%}" alt="package" />
+          <img src="{%static 'images/packages.png'%}" alt="packages" />
           <div class="feature-desc">
             <h2>Back-in-Stock Alerts</h2>
             <p>
@@ -82,10 +100,15 @@
         </div>
       </div>
       <div class="desc-alerts">
+        <img
+          class="alert-image resp-banner"
+          src="{%static 'images/banner1.png'%}"
+          alt="banner"
+        />
         <div>
           <h3>Price Drop Alerts</h3>
           <p>
-            Add any product to your Watchlist, and ShopSavvy will notify you
+            Add any product to your Watchlist, and OmniGether will notify you
             whenever it drops in price.
           </p>
           <div class="short-desc">
@@ -99,7 +122,7 @@
             </div>
           </div>
           <div class="short-desc">
-            <img src="{%static 'images/settings.png'%}" alt="alarm" />
+            <img src="{%static 'images/settings.png'%}" alt="settings" />
             <div>
               <h4>Fully Configurable</h4>
               <p>
@@ -109,11 +132,11 @@
             </div>
           </div>
           <div class="short-desc">
-            <img src="{%static 'images/eyes.png'%}" alt="alarm" />
+            <img src="{%static 'images/eyes.png'%}" alt="eyes" />
             <div>
               <h4>Always Watching</h4>
               <p>
-                ShopSavvy continuously checks the price of all the products in
+                OmniGether continuously checks the price of all the products in
                 your Watchlist, and lets you know when it finds a change.
               </p>
             </div>
@@ -122,11 +145,16 @@
         <img class="alert-image" src="{%static 'images/banner1.png'%}" alt="banner" />
       </div>
       <div class="desc-alerts">
+        <img
+          class="alert-image resp-banner"
+          src="{%static 'images/leptop.png'%}"
+          alt="banner"
+        />
         <img class="alert-image" src="{%static 'images/leptop.png'%}" alt="banner" />
         <div>
           <h3>Find Best Deal</h3>
           <p>
-            Add any product to your Watchlist, and ShopSavvy will notify you
+            Add any product to your Watchlist, and OmniGether will notify you
             whenever it drops in price.
           </p>
           <div class="short-desc">
@@ -140,7 +168,7 @@
             </div>
           </div>
           <div class="short-desc">
-            <img src="{%static 'images/settings.png'%}" alt="alarm" />
+            <img src="{%static 'images/settings.png'%}" alt="settings" />
             <div>
               <h4>Fully Configurable</h4>
               <p>
@@ -150,11 +178,11 @@
             </div>
           </div>
           <div class="short-desc">
-            <img src="{%static 'images/eyes.png'%}" alt="alarm" />
+            <img src="{%static 'images/eyes.png'%}" alt="eyes" />
             <div>
               <h4>Always Watching</h4>
               <p>
-                ShopSavvy continuously checks the price of all the products in
+                OmniGether continuously checks the price of all the products in
                 your Watchlist, and lets you know when it finds a change.
               </p>
             </div>
@@ -162,10 +190,16 @@
         </div>
       </div>
       <div class="desc-alerts">
+        <img
+          class="alert-image resp-banner"
+          src="{%static 'images/banner1.png'%}"
+          alt="banner"
+        />
+
         <div>
           <h3>Price Comparison</h3>
           <p>
-            Add any product to your Watchlist, and ShopSavvy will notify you
+            Add any product to your Watchlist, and OmniGether will notify you
             whenever it drops in price.
           </p>
           <div class="short-desc">
@@ -179,7 +213,7 @@
             </div>
           </div>
           <div class="short-desc">
-            <img src="{%static 'images/settings.png'%}" alt="alarm" />
+            <img src="{%static 'images/settings.png'%}" alt="settings" />
             <div>
               <h4>Fully Configurable</h4>
               <p>
@@ -189,11 +223,11 @@
             </div>
           </div>
           <div class="short-desc">
-            <img src="{%static 'images/eyes.png'%}" alt="alarm" />
+            <img src="{%static 'images/eyes.png'%}" alt="eyes" />
             <div>
               <h4>Always Watching</h4>
               <p>
-                ShopSavvy continuously checks the price of all the products in
+                OmniGether continuously checks the price of all the products in
                 your Watchlist, and lets you know when it finds a change.
               </p>
             </div>
@@ -202,11 +236,16 @@
         <img class="alert-image" src="{%static 'images/banner1.png'%}" alt="banner" />
       </div>
       <div class="desc-alerts">
+        <img
+          class="alert-image resp-banner"
+          src="{%static 'images/leptop.png'%}"
+          alt="banner"
+        />
         <img class="alert-image" src="{%static 'images/leptop.png'%}" alt="banner" />
         <div>
           <h3>Back-in-Stock Alerts</h3>
           <p>
-            Add any product to your Watchlist, and ShopSavvy will notify you
+            Add any product to your Watchlist, and OmniGether will notify you
             whenever it drops in price.
           </p>
           <div class="short-desc">
@@ -220,7 +259,7 @@
             </div>
           </div>
           <div class="short-desc">
-            <img src="{%static 'images/settings.png'%}" alt="alarm" />
+            <img src="{%static 'images/settings.png'%}" alt="settings" />
             <div>
               <h4>Fully Configurable</h4>
               <p>
@@ -230,11 +269,11 @@
             </div>
           </div>
           <div class="short-desc">
-            <img src="{%static 'images/eyes.png'%}" alt="alarm" />
+            <img src="{%static 'images/eyes.png'%}" alt="eyes" />
             <div>
               <h4>Always Watching</h4>
               <p>
-                ShopSavvy continuously checks the price of all the products in
+                OmniGether continuously checks the price of all the products in
                 your Watchlist, and lets you know when it finds a change.
               </p>
             </div>
@@ -251,6 +290,52 @@
           <li><img src="{%static 'images/alibaba.png'%}" alt="alibaba" /></li>
           <li><img src="{%static 'images/bestbuy.jpg'%}" alt="bestbuy" /></li>
         </ul>
+      </div>
+      <div class="price-list">
+        <h2>Pricing:</h2>
+        <h4>Straightforward, Fair, Competitive Pricing</h4>
+        <div class="pricing-boxes">
+          <div class="pricing-box">
+            <div><h3>Basic Plan</h3></div>
+            <div class="pricing-content">
+              <p>0$/Month</p>
+              <p>Free 30 credit</p>
+              <p>Price Drop Alerts</p>
+              <p>Back-in-Stock Alerts</p>
+              <p>Deal Alerts</p>
+              <p>Find best Deals</p>
+              <a href="{% url 'main' %}"><button>Get Start</button></a>
+            </div>
+          </div>
+          <div class="pricing-box">
+            <div><h3>Medium Plan</h3></div>
+            <div class="pricing-content">
+              <p>15$/Month</p>
+              <p>300 credit</p>
+              <p>Price Drop Alerts</p>
+              <p>Back-in-Stock Alerts</p>
+              <p>Deal Alerts</p>
+              <p>Find best Deals</p>
+              <p>Compare Price</p>
+              <p class="assistant-help">Shopping assistant help</p>
+              <button>Comming Soon</button>
+            </div>
+          </div>
+          <div class="pricing-box">
+            <div><h3>Premium Plan</h3></div>
+            <div class="pricing-content">
+              <p>30$/Month</p>
+              <p>1000 credit</p>
+              <p>Price Drop Alerts</p>
+              <p>Back-in-Stock Alerts</p>
+              <p>Deal Alerts</p>
+              <p>Find best Deals</p>
+              <p>Compare Price</p>
+              <p class="assistant-help">Shopping assistant help</p>
+              <button>Comming Soon</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -283,7 +368,7 @@
           <ul>
             <li class="footer-header">subscribe for update</li>
             <li class="subtext">
-              Get the latest news, and updates on ShopSavvy. You'll be glad you
+              Get the latest news, and updates on OmniGether. You'll be glad you
               did!
             </li>
             <li class="sendemail">

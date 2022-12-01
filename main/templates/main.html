@@ -1,0 +1,439 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OmniGether: UserPage</title>
+    <link href="{%static 'images/logomaker.png" rel="icon" />
+    <link rel="stylesheet" href="{%static 'css/reset.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+    <link rel="stylesheet" href="{%static 'css/font.css'%}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Quicksand"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <ul>
+        <li>
+          <a href="{% url 'home' %}"
+            ><img
+              class="header-logo"
+              src="{%static 'images/logomaker.png'%}"
+              alt="logo"
+          /></a>
+        </li>
+        <li><a href="#app">app</a></li>
+        <li><a href="#extension">browser extension</a></li>
+        <li><a href="#help">help</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <a href="{% url 'main' %}" class="getstart">get OmniGether</a>
+    </header>
+    <header class="responsive-header">
+      <div>
+        <a href="{% url 'home' %}"
+          ><img
+            class="header-logo"
+            src="{%static 'images/logomaker.png'%}"
+            alt="logo"
+        /></a>
+        <a href="{% url 'main' %}" class="getstart">get OmniGether</a>
+      </div>
+      <ul>
+        <li><a href="#app">app</a></li>
+        <li><a href="#extension">browser extension</a></li>
+        <li><a href="#help">help</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </header>
+    <main class="company-logos">
+      <a href="#" id="myBtn">
+        <img src="{%static 'images/Amazon-Logo.jpg'%}" />
+      </a>
+      <div id="myModal" class="modal">
+        <div class="modal-content-close">
+          <span class="close">&times;</span>
+        </div>
+        <div class="user-form">
+          <div class="form-banner-amazon"></div>
+          <form class="filling-form">
+            <div class="label-input">
+              <label
+                >Product URL<a
+                  title="Because we understand which product we are talking about and observe for you"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="text" name="url" autocomplete="off" />
+            </div>
+            <div class="label-input">
+              <label
+                >Preferred Price<a
+                  title="Tell us what price you want, after which we will send you a message"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="number" min="0" name="price" autocomplete="off" />
+            </div>
+            <div class="label-input">
+              <label
+                >Email Address<a
+                  title="Enter an active email where you will receive discount information"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="text" name="email" autocomplete="off" />
+            </div>
+            <input class="submit-credit" type="submit" value="Free Credit" />
+          </form>
+        </div>
+      </div>
+      <a href="#" id="myebayBtn">
+        <img src="{%static 'images/ebay-logo.jpg'%}" />
+      </a>
+      <div id="myebayModal" class="modalebay">
+        <div class="modal-content-close">
+          <span class="close">&times;</span>
+        </div>
+        <div class="user-form">
+          <div class="form-banner-ebay"></div>
+          <form class="filling-form">
+            <div class="label-input">
+              <label
+                >Product URL<a
+                  title="Because we understand which product we are talking about and observe for you"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="text" name="url" autocomplete="off" />
+            </div>
+            <div class="label-input">
+              <label
+                >Preferred Price<a
+                  title="Tell us what price you want, after which we will send you a message"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="number" min="0" name="price" autocomplete="off" />
+            </div>
+            <div class="label-input">
+              <label
+                >Email Address<a
+                  title="Enter an active email where you will receive discount information"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="text" name="email" autocomplete="off" />
+            </div>
+            <input class="submit-credit" type="submit" value="Free Credit" />
+          </form>
+        </div>
+      </div>
+      <a href="#" id="myvendooBtn">
+        <img src="{%static 'images/vendoo-logo.png'%}" />
+      </a>
+      <div id="myvendooModal" class="modalvendoo">
+        <div class="modal-content-close">
+          <span class="close">&times;</span>
+        </div>
+        <div class="user-form">
+          <div class="form-banner-vendoo"></div>
+          <form class="filling-form">
+            <div class="label-input">
+              <label
+                >Product URL<a
+                  title="Because we understand which product we are talking about and observe for you"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="text" name="url" autocomplete="off" />
+            </div>
+            <div class="label-input">
+              <label
+                >Preferred Price<a
+                  title="Tell us what price you want, after which we will send you a message"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="number" min="0" name="price" autocomplete="off" />
+            </div>
+            <div class="label-input">
+              <label
+                >Email Address<a
+                  title="Enter an active email where you will receive discount information"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="text" name="email" autocomplete="off" />
+            </div>
+            <input class="submit-credit" type="submit" value="Free Credit" />
+          </form>
+        </div>
+      </div>
+      <a href="#" id="myalibabaBtn">
+        <img src="{%static 'images/alibaba-logo.jpg'%}" />
+      </a>
+      <div id="myalibabaModal" class="modalalibaba">
+        <div class="modal-content-close">
+          <span class="close">&times;</span>
+        </div>
+        <div class="user-form">
+          <div class="form-banner-alibaba"></div>
+          <form class="filling-form">
+            <div class="label-input">
+              <label
+                >Product URL<a
+                  title="Because we understand which product we are talking about and observe for you"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="text" name="url" autocomplete="off" />
+            </div>
+            <div class="label-input">
+              <label
+                >Preferred Price<a
+                  title="Tell us what price you want, after which we will send you a message"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="number" min="0" name="price" autocomplete="off" />
+            </div>
+            <div class="label-input">
+              <label
+                >Email Address<a
+                  title="Enter an active email where you will receive discount information"
+                  href="#"
+                  >*</a
+                >:</label
+              >
+              <input type="text" name="email" autocomplete="off" />
+            </div>
+            <input class="submit-credit" type="submit" value="Free Credit" />
+          </form>
+        </div>
+      </div>
+
+      <div class="howtocontainer">
+        <!-- <div class="what-block">
+                <h1>What?</h1>
+                <p>itacli mdsaidmasi dmasidmaisdmaisdmai sdmaisdm aisdm iasmi dmasidmsaidm aisdm iasdmasimdadm asimdaisdmi asmdi amsidmasimd aismdiasm diasmi dmdsiadmiasmd iasmd iasmdi amsi as</p>
+            </div>
+            <div class="why-block">
+                <h1>Why?</h1>
+                <div class="reasons3">
+                    <div>
+                        <img src="assets/images/savemoney.png">
+                        <h2>Save Money</h2>
+                        <p>itacli mdsaidmasi dmasidmai itacli mdsaidmasi dmasidmai itacli mdsaidmasi dmasidmai</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/savetime.png">
+                        <h2>Time Saving</h2>
+                        <p>itacli mdsaidmasi dmasidmai itacli mdsaidmasi dmasidmai itacli mdsaidmasi dmasidmai</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/free-icon.png">
+                        <h2>It's Free</h2>
+                        <p>itacli mdsaidmasi dmasidmai itacli mdsaidmasi dmasidmai </p>
+                    </div>
+                </div>
+            </div> -->
+        <div class="how-block">
+          <h1>How It Works?</h1>
+          <h2>Step 1:</h2>
+          <p>Copy the link of your desired product</p>
+          <img src="{%static 'images/screen1.png'%}" />
+          <h2>Step 2:</h2>
+          <p>
+            You open the box of the corresponding website and paste the copied
+            link in the corresponding field.
+          </p>
+          <img src="{%static 'images/screen3.png'%}" />
+          <h2>Step 3:</h2>
+          <p>
+            For example, the price of a product is $110 and you want to buy this
+            item for less than $80.
+          </p>
+          <img src="{%static 'images/screen2.png'%}" />
+          <h2>Step 4:</h2>
+          <p>
+            You indicate the price you want in the relevant field, which means
+            that in the case of a discount, you will receive a notification only
+            below this price.
+          </p>
+          <img src="{%static 'images/screen4.png'%}" />
+          <h2>Step 5:</h2>
+          <p>
+            You indicate the e-mail you want to receive notifications from our
+            site.
+          </p>
+          <img src="{%static 'images/screen5.png'%}" />
+
+          <div class="how-logo">
+            <a href="{% url 'home' %}" class="how-logo"
+              ><img src="{%static 'images/logovector.png'%}"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div>
+          <ul>
+            <li class="footer-header">get omnigether</li>
+            <li><a href="#">for chrome browser</a></li>
+            <li><a href="#">for safari browser</a></li>
+            <li><a href="#">for edge browser</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="footer-header">learn more</li>
+            <li><a href="#">app</a></li>
+            <li><a href="#">browser extension</a></li>
+            <li><a href="#">help</a></li>
+            <li><a href="#">about</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="footer-header">legal</li>
+            <li><a href="#">privacy</a></li>
+            <li><a href="#">terms</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="footer-header">subscribe for update</li>
+            <li class="subtext">
+              Get the latest news, and updates on OmniGether. You'll be glad you
+              did!
+            </li>
+            <li class="sendemail">
+              <input type="email" name="email" id="email" />
+              <button>Subscribe</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p>© 2022 OmniGether. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      // Get the modal
+      var modalalibaba = document.getElementById("myalibabaModal");
+      // Get the button that opens the modal
+      var btnalibaba = document.getElementById("myalibabaBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+
+      btnalibaba.onclick = function () {
+        modalalibaba.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+
+      span.onclick = function () {
+        modalalibaba.style.display = "none";
+      };
+
+      // Get the modal
+      var modalvendoo = document.getElementById("myvendooModal");
+      // Get the button that opens the modal
+      var btnvendoo = document.getElementById("myvendooBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+
+      btnvendoo.onclick = function () {
+        modalvendoo.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+
+      span.onclick = function () {
+        modalvendoo.style.display = "none";
+      };
+
+      // Get the modal
+      var modalebay = document.getElementById("myebayModal");
+      // Get the button that opens the modal
+      var btnebay = document.getElementById("myebayBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+
+      btnebay.onclick = function () {
+        modalebay.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+
+      span.onclick = function () {
+        modalebay.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+        if (event.target == modalebay) {
+          modalebay.style.display = "none";
+        }
+        if (event.target == modalvendoo) {
+          modalvendoo.style.display = "none";
+        }
+        if (event.target == modalalibaba) {
+          modalalibaba.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
